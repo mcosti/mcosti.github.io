@@ -1,0 +1,113 @@
+/*
+* === FONTS ===
+*/
+
+@font-face {
+    font-family: Dosis;
+    src: url("../fonts/Dosis-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Dosis;
+    src: url("../fonts/Dosis-Bold.otf") format("opentype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Dosis;
+    src: url("../fonts/Dosis-SemiBold.otf") format("opentype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Dosis;
+    src: url("../fonts/Dosis-Medium.otf") format("opentype");
+    font-weight: 500;
+}
+* {
+	font-family: Dosis;
+	font-size:16px;
+}
+
+/*
+* === HEADER ===
+*/
+
+.header {
+	background-color:#f7f3e7;
+	height:180px;
+}
+
+.header div {
+	padding-bottom:5px;
+}
+
+.header a{
+	color:#303a41;
+}
+
+
+.menu {
+	background-color: white;
+	border:3px;
+}
+
+.menu .navbar {
+	position:relative;
+}
+
+.menu .navbar-nav li a {
+	padding:35px 35px 35px 35px;
+	font-weight:bold;
+	color:#303a41;
+}
+
+.menu .navbar-nav li a:hover {
+	 border-bottom:3px solid #aa0556;
+}
+
+.menu .navbar-header a {
+
+}
+
+li.button-cta a{
+	background-color:#aa0556!important;
+	color:white!important;
+	font-weight: 600;
+}
+
+li.button-cta a:hover {
+	border-bottom:0px;
+}
+
+.content .button-cta {
+	background-color:#aa0556!important;
+	color:white;
+	padding:20px 20px 20px 20px;
+	text-transform: uppercase;
+	font-weight:bold;
+}
+
+.logo {
+	display: inline-block;
+    padding: 15px;
+    line-height: 100%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: white;
+    position:absolute;
+    margin-top:-15px;
+}
+
+
+
+/*
+* === CONTENT===
+*/
+
+.content ul li {
+	list-style-type:none;
+	line-height:30px;
+	font-size:20px;
+	font-weight:500;
+}
