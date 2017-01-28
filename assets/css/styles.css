@@ -25,9 +25,27 @@
     font-weight: 500;
 }
 
+/*
+* === TYPOGRAPHY ===
+*/
 * {
-    font-family: Dosis;
+	font-family:Dosis;
+}
+a, p {
     font-size: 16px;
+}
+
+h1 b{
+	color:#303a41;
+}
+
+.tab-pane h1 b{
+	font-size:36px;
+}
+
+.tab-pane p {
+	font-size: 20px;
+	font-weight:normal;
 }
 
 
@@ -64,6 +82,11 @@
     color: #303a41;
 }
 
+.header-image {
+	width:100%;
+	margin-top:-20px;
+}
+
 .menu {
     background-color: white;
     border: 3px;
@@ -84,11 +107,15 @@
     color: white;
 }
 
-.menu .navbar-nav .active {
+.nav .active {
     border-bottom: 3px solid #aa0556;
 }
 
-.menu .navbar-header a {}
+.menu .navbar-header a:last-child {
+	margin-left:135px;
+	margin-top:32px;
+	display:block;
+}
 
 li.button-cta a {
     background-color: #aa0556!important;
@@ -118,6 +145,7 @@ li.button-cta a:hover {
     background-color: white;
     position: absolute;
     margin-top: -15px;
+    z-index:10;
 }
 
 .empty-space {
@@ -133,7 +161,7 @@ li.button-cta a:hover {
     width: 60px;
     height: 45px;
     position: relative;
-    margin: 50px auto;
+    margin: 50px;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -251,6 +279,75 @@ li.button-cta a:hover {
 
 
 /*
+* === NAV PILLS ===
+*/
+
+.nav-pills li a {
+	background-color:transparent!important;
+	color:#303a41!important;
+	font-weight:600;
+	font-size:18px;
+}
+
+
+.nav-pills li a:hover {
+	background-color:#aa0556!important;
+	color:white!important;
+}
+
+.nav-pills .active {
+	background-color:#aa0556;
+	border-bottom:0;
+}
+
+.nav-pills li.active a {
+	color:white!important;
+}
+
+.tab-content {
+	min-height:400px;
+}
+
+/*
+* === PENTRU PACIENTI ===
+*/
+.cta-pacienti {
+	min-height:300px;
+}
+.cta-pacienti img {
+	position:relative;
+}
+
+.cta-pacienti p {
+	margin-top:30px;
+	position:absolute;
+	z-index:10;
+	color:#aa0556;
+}
+
+.cta-pacienti p span {
+	font-size:36px;
+	font-weight:600;
+	color:#aa0556;
+	text-transform:uppercase;
+}
+
+.cta-pacienti button {
+	position:absolute;
+	z-index:10;
+	color:white;
+	font-size: 20px;
+	font-weight:bold;
+	background-color:#aa0556;
+	text-transform: uppercase;
+	margin-top:20px;
+	padding: 10px;
+}
+
+.cta-pacienti button:hover, .cta-pacienti button:focus {
+	color:white;
+}
+/*
 * === MEDIA QUERIES ===
 */
 
@@ -272,4 +369,12 @@ li.button-cta a:hover {
     .footer ul li:last-child a {
         border: 0;
     }
+}
+
+/*
+* === HELPERS ===
+*/
+
+.padding-bottom {
+	padding-bottom:10px;
 }
