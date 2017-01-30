@@ -122,17 +122,14 @@ h1 b {
 }
 
 .menu .menu-pacienti {
-	background-color:#f24b00;
-	color:white!important;
+    background-color: #f24b00;
+    color: white!important;
 }
-
-
 
 .menu .menu-medici {
-	background-color:#0f437f;
-	color:white!important;
+    background-color: #0f437f;
+    color: white!important;
 }
-
 
 li.button-cta a {
     background-color: #aa0556!important;
@@ -337,13 +334,16 @@ li.button-cta a:hover {
     position: relative;
 }
 
-.cta-pacienti p {
+.cta-pacienti div>div {
     margin-top: 30px;
     position: absolute;
     z-index: 10;
+}
+
+.cta-pacienti p {
     color: #aa0556;
-    line-height:30px;
-    font-size:18px;
+    line-height: 30px;
+    font-size: 18px;
 }
 
 .cta-pacienti p span {
@@ -392,75 +392,74 @@ li.button-cta a:hover {
 .inscriere-pacienti .inscriere-telefon p {
     font-size: 16px;
 }
+
 .inscriere-pacienti .inscriere-telefon .link {
     font-size: 20px;
-    color:black;
-    text-decoration:underline;
+    color: black;
+    text-decoration: underline;
 }
 
 .inscriere-pacienti .inscriere-telefon label {
     font-size: 20px;
 }
 
-.inscriere-pacienti .inscriere-telefon input, input::-webkit-input-placeholder
- {
+.inscriere-pacienti .inscriere-telefon input,
+input::-webkit-input-placeholder {
     font-size: 20px;
     line-height: 3;
 }
 
-.inscriere-pacienti .disclaimer p{
-	font-size:16px;
-	font-weight:normal;
+.inscriere-pacienti .disclaimer p {
+    font-size: 16px;
+    font-weight: normal;
 }
 
 .inscriere-pacienti .inscriere-medici {
-	background-color:#ebebeb;
+    background-color: #ebebeb;
 }
 
-
-.info-medici{
-	margin-top:10px;
-	background-color:#cddaea;
+.info-medici {
+    margin-top: 10px;
+    background-color: #cddaea;
 }
 
 .info-medici p {
-	color:#303a41;
-	font-weight:bold;
-	margin:15px;
-	font-size:18px;
+    color: #303a41;
+    font-weight: bold;
+    margin: 15px;
+    font-size: 18px;
 }
 
 .info-medici button {
-	background-color:#e3ecf8;
-	color:#4d79ac;
-	text-transform:uppercase;
-	font-weight:bold;
-	padding:10px;
-	margin-top:15px;
-	margin-bottom:15px;
+    background-color: #e3ecf8;
+    color: #4d79ac;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-
-.info-pacienti{
-	margin-top:10px;
-	background-color:#f6f4eb;
+.info-pacienti {
+    margin-top: 10px;
+    background-color: #f6f4eb;
 }
 
 .info-pacienti p {
-	color:#303a41;
-	font-weight:bold;
-	margin:15px;
-	font-size:18px;
+    color: #303a41;
+    font-weight: bold;
+    margin: 15px;
+    font-size: 18px;
 }
 
 .info-pacienti button {
-	background-color:#e0dccc;
-	color:#303a41;
-	text-transform:uppercase;
-	font-weight:bold;
-	padding:10px;
-	margin-top:15px;
-	margin-bottom:15px;
+    background-color: #e0dccc;
+    color: #303a41;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .content .button-cta-orange {
@@ -470,7 +469,7 @@ li.button-cta a:hover {
     text-transform: uppercase;
     font-weight: bold;
     margin-top: 20px;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
 
@@ -496,6 +495,15 @@ li.button-cta a:hover {
     .footer ul li:last-child a {
         border: 0;
     }
+     .medici{
+        min-height: 500px;
+    }
+}
+
+@media(max-width:450px) {
+     .medici{
+        min-height: 650px;
+    }
 }
 
 
@@ -508,5 +516,5 @@ li.button-cta a:hover {
 }
 
 .padding-top {
-	padding-top:10px;
+    padding-top: 10px;
 }
